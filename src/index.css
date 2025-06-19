@@ -1,0 +1,113 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+html, body,#root{
+  width: 100%;
+  height: 100%;
+}
+
+#Main{
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  color: white;
+  background-image: url('src/assets/bgimg.jpg');
+  background-position: center right;
+  position: relative;
+  
+}
+
+nav{
+  width: 100%;
+  height: 15%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  flex-wrap: wrap;
+}
+
+.Logo img{
+  width: 6rem;
+}
+.Menu{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5vw;
+  flex-wrap: wrap;
+}
+.Menu a{
+  text-decoration: none;
+  color: white;
+}
+
+.btn button{
+  padding: 10px 20px;
+  border-radius: 12px;
+  font-weight: 600;
+  background-color: #F65F5F;
+  cursor:pointer;
+}
+
+.Arrowimg img{
+  width: 6%;
+  position:absolute;
+  top: 10%;
+  left: 9%;
+}
+
+/* Page1 Starts here */
+
+.Page1{
+  width: 100%;
+  height: 85%;
+  display: flex;
+}
+
+.Page1Left{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  /* justify-content: center; */
+  /* background-color: #F65F5F; */
+}
+
+.smallBoxPeopleTrustUs{
+  width: 10rem;
+  height: 2rem;
+  background-color: rgb(44, 23, 23);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 18px;
+  gap: 10px;
+}
+
+
+.MainHeroTxt {
+ font-size: 2rem;
+}
+
+.MainHeroTxt span{
+  color: rgb(245, 71, 72);
+}
+
+
+.MainHeroDesText{
+  width: 60%;
+  font-size: 1.5rem;
+}
+
+
+
+.Page1Right{
+  width: 50%;
+  height: 100%;
+  background-color: crimson;
+}
