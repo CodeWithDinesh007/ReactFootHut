@@ -1,15 +1,20 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
 }
-html, body,#root{
+
+html,
+body,
+#root {
   width: 100%;
   height: 100%;
+  background-color: black;
+  color: white;
 }
 
-#Main{
+#Main {
   width: 100%;
   height: 100%;
   background-color: black;
@@ -17,10 +22,10 @@ html, body,#root{
   background-image: url('src/assets/bgimg.jpg');
   background-position: center right;
   position: relative;
-  
+
 }
 
-nav{
+nav {
   width: 100%;
   height: 15%;
   display: flex;
@@ -30,55 +35,62 @@ nav{
   flex-wrap: wrap;
 }
 
-.Logo img{
+.Logo img {
   width: 6rem;
 }
-.Menu{
+
+.Menu {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 5vw;
   flex-wrap: wrap;
 }
-.Menu a{
+
+.Menu a {
   text-decoration: none;
   color: white;
 }
 
-.btn button{
+.btn button {
   padding: 10px 20px;
   border-radius: 12px;
   font-weight: 600;
   background-color: #F65F5F;
-  cursor:pointer;
+  cursor: pointer;
+  outline: none;
+  border: none;
 }
 
-.Arrowimg img{
-  width: 6%;
-  position:absolute;
+.Arrowimg img {
+  width: 8%;
+  position: absolute;
   top: 10%;
-  left: 9%;
+  left: 10%;
 }
 
 /* Page1 Starts here */
 
-.Page1{
+.Page1 {
   width: 100%;
   height: 85%;
   display: flex;
 }
 
-.Page1Left{
+.Page1Left {
   width: 50%;
   height: 100%;
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  /* justify-content: center; */
+  gap: 30px;
+  justify-content: center;
+  padding-left: 2%;
+  position: relative;
+  /* align-items: center; */
   /* background-color: #F65F5F; */
 }
 
-.smallBoxPeopleTrustUs{
+.smallBoxPeopleTrustUs {
   width: 10rem;
   height: 2rem;
   background-color: rgb(44, 23, 23);
@@ -91,23 +103,303 @@ nav{
 
 
 .MainHeroTxt {
- font-size: 2rem;
+  font-size: 2rem;
 }
 
-.MainHeroTxt span{
+.DeldecoImg {
+  position: absolute;
+  top: 45%;
+  right: 25%;
+}
+
+.DeldecoImg img {
+  width: 19rem;
+}
+
+.MainHeroTxt span {
   color: rgb(245, 71, 72);
 }
 
 
-.MainHeroDesText{
+.MainHeroDesText {
   width: 60%;
   font-size: 1.5rem;
 }
 
+.SearchBar {
+  width: 29.438rem;
+  height: 3.375rem;
+  background-color: rgb(30, 28, 28);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.SearchBar input {
+  width: 29.438rem;
+  height: 100%;
+  background: none;
+  outline: none;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.SearchBar img {
+  width: 1.875rem;
+}
 
 
-.Page1Right{
+.SearchBar button img {
+
+  width: 2.5rem;
+  cursor: pointer;
+}
+
+.SearchBar button {
+  background: none;
+  outline: none;
+  border: none;
+}
+
+.HeroMedia {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+#HeroMediaBtn2 {
+  background: none;
+  outline: none;
+  border: none;
+}
+
+.HeroMedia a {
+  color: white;
+  text-decoration: none;
+}
+
+
+/* Right Side Starts here */
+
+.Page1Right {
   width: 50%;
   height: 100%;
-  background-color: crimson;
+  position: relative;
+
+}
+
+.fireChar {
+  position: absolute;
+  top: 3.7rem;
+  right: 46%;
+}
+
+.MainCharacter {
+  width: 100%;
+  height: 100%;
+  /* background-color: white; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.MainCharacter img {
+  width: 22rem;
+}
+
+.MainCharElli {
+  position: absolute;
+  top: 13%;
+  left: 18.5%;
+}
+
+.MainCharElli img {
+  width: 30rem;
+}
+
+.fooddishimg {
+  position: absolute;
+  top: 30%;
+  left: 6%;
+}
+
+.feedBack {
+  position: absolute;
+  right: 6%;
+  top: 30%;
+}
+
+.meal1 {
+  position: absolute;
+  bottom: 18%;
+  left: 17%;
+}
+
+.sizeMeals img {
+  width: 8rem;
+}
+
+.meal2 {
+
+  position: absolute;
+  bottom: 1%;
+  left: 33%;
+}
+
+.meal3 {
+  position: absolute;
+  bottom: 1%;
+  left: 55%;
+}
+
+.meal3 img {
+  width: 9rem;
+}
+
+.meal4 {
+  position: absolute;
+  bottom: 25%;
+  left: 70%;
+}
+
+.meal4 img {
+  width: 9rem;
+}
+
+.arrow1 {
+  position: absolute;
+  top: 0;
+  right: 70px;
+  transform: rotate(20deg);
+}
+
+
+.sliderDown {
+  position: absolute;
+  bottom: -2.6vw;
+  left: 1%;
+}
+
+/* page2 starts here */
+
+.Page2 {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page2HeroTxt {
+  width: 100%;
+  height: 4%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+  margin-top: 5%;
+}
+
+.page2HeroTxt span {
+  color: #F54748;
+}
+
+.page2HeroTxt1 {
+  width: 50%;
+  height: 4%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 2%;
+}
+
+.DownBox {
+  width: 100%;
+  height: 70%;
+  margin-top: 5%;
+  padding: 0px 40px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  gap: 100px;
+}
+
+.resBox {
+  width: 20vw;
+  height: 70vh;
+  position: relative;
+}
+
+.resboxdes {
+  width: 100%;
+  height: 70%;
+  background-image: url('assets/gradi.png');
+  background-position: center center;
+  background-size: cover;
+  border-radius: 10%;
+  position: absolute;
+  bottom: 0;
+}
+
+.resboximg1 {
+  position: absolute;
+  left: 5%;
+  top: 0;
+}
+
+.resboximg2 {
+  position: absolute;
+  left: 13%;
+  top: 5%;
+}
+
+.resboximg3price {
+  width: 23%;
+  height: 14%;
+  background-color: #FDCE77;
+  border-radius: 50%;
+  position: absolute;
+  right: 80px;
+  top: 32%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  border: 5px solid black;
+}
+
+.resboxdes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.resboxdesAb {
+  width: 80%;
+  height: 5%;
+  text-align: center;
+}
+
+.resboxbtn {
+  position: absolute;
+  bottom: -0.85rem;
+  left: 32%;
+}
+
+.resboxbtn button {
+  padding: 10px 20px;
+  background-color: #F65F5F;
+  border: none;
+  outline: none;
+  font-size: 1.1rem;
+  border-radius: 25px;
 }
